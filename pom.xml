@@ -13,7 +13,6 @@
     </properties>
     <modules>
         <module>abstract-factory</module>
-        <module>builder-factory</module>
     </modules>
 
     <dependencies>
