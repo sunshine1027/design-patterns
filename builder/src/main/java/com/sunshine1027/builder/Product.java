@@ -21,6 +21,9 @@ public class Product {
         expiryDate = builder.getExpiryDate();
     }
 
+    /**
+     * builder
+     */
     public static class ProductBuilder {
         private String productId;
         private String productName;
