@@ -7,11 +7,11 @@ import java.util.Date;
  */
 
 public class Product {
-    private String productId;
-    private String productName;
-    private FactoryEnum factory;
-    private Date creationDate;
-    private Date expiryDate;
+    private final String productId;
+    private final String productName;
+    private final FactoryEnum factory;
+    private final Date creationDate;
+    private final Date expiryDate;
 
     private Product(ProductBuilder builder) {
         productId = builder.getProductId();
@@ -106,40 +106,20 @@ public class Product {
         return productId;
     }
 
-    public void setProductId(String productId) {
-        this.productId = productId;
-    }
-
     public String getProductName() {
         return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
     }
 
     public FactoryEnum getFactory() {
         return factory;
     }
 
-    public void setFactory(FactoryEnum factory) {
-        this.factory = factory;
-    }
-
     public Date getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Date creationDate) {
-        this.creationDate = creationDate;
-    }
-
     public Date getExpiryDate() {
         return expiryDate;
-    }
-
-    public void setExpiryDate(Date expiryDate) {
-        this.expiryDate = expiryDate;
     }
 
     @Override
