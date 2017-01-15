@@ -1,4 +1,4 @@
-package com.sunshine1027.adapter;
+package com.sunshine1027.adapter.objectadapter;
 
 import java.math.BigDecimal;
 
@@ -6,15 +6,17 @@ import java.math.BigDecimal;
  * @author sunshine1027 [sunshine10271993@gmail.com]
  */
 
-public class Foreign {
+public class Employee {
     private long id;
     private String name;
     private TitleType title;
+    private int age;
 
-    public Foreign(long id, String name, TitleType title) {
+    public Employee(long id, String name, TitleType title, int age) {
         this.id = id;
         this.name = name;
         this.title = title;
+        this.age = age;
     }
 
     public long getId() {
@@ -41,7 +43,15 @@ public class Foreign {
         this.title = title;
     }
 
-    public BigDecimal getS() {
-        return BigDecimal.valueOf(id);
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public BigDecimal getSalary() {
+        return BigDecimal.ZERO;
     }
 }

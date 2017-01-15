@@ -1,4 +1,4 @@
-package com.sunshine1027.adapter;
+package com.sunshine1027.adapter.objectadapter;
 
 /**
  * @author sunshine1027 [sunshine10271993@gmail.com]
