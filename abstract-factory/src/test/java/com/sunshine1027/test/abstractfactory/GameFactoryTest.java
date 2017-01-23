@@ -25,6 +25,7 @@ public class GameFactoryTest {
         user = new User("Jack", "jack jack");
     }
 
+    
     @Test
     public void testPCGame() {
         Company blizzard = new Blizzard();
