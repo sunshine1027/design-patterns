@@ -10,21 +10,21 @@ import java.util.List;
 
 public abstract class PointComposite {
 
-    private List<PointComposite> list = Lists.newArrayList();
+    private List<PointComposite> childList = Lists.newArrayList();
 
 
     public void add(PointComposite pointComposite) {
-       list.add(pointComposite);
+        childList.add(pointComposite);
     }
 
     public void remove(PointComposite pointComposite) {
-        list.remove(pointComposite);
+        childList.remove(pointComposite);
     }
 
     @Override
     public String toString() {
         return "PointComposite{" +
-                "list=" + list +
+                "childList=" + childList +
                 '}';
     }
 }
