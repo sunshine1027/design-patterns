@@ -1,7 +1,7 @@
 package com.sunshine1027.test.decorator;
 
-import com.sunshine1027.decorator.BoheaTea;
-import com.sunshine1027.decorator.GreenTea;
+import com.sunshine1027.decorator.ProgrammerDecorator;
+import com.sunshine1027.decorator.SimpleProgrammer;
 import org.junit.Test;
 
 /**
@@ -11,12 +11,11 @@ import org.junit.Test;
 public class TestDecorator {
     @Test
     public void test() {
-        GreenTea greenTea = new GreenTea();
-        BoheaTea boheaTea = new BoheaTea(greenTea);
+        SimpleProgrammer simpleProgrammer = new SimpleProgrammer();
+        simpleProgrammer.code();
 
-        greenTea.action();
-        System.out.println("----------------------");
-        boheaTea.action();
+        ProgrammerDecorator programmerDecorator = new ProgrammerDecorator(simpleProgrammer);
+        programmerDecorator.code();
     }
 
 }
