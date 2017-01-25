@@ -7,7 +7,7 @@ import com.sunshine1027.abstractfactory.User;
  */
 
 public class DiabloGame implements OnlineGame{
-
+    @Override
     public String consume(User user, int price) {
         return createDiabloConsumeMsg(user, price);
     }

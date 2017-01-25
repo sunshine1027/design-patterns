@@ -7,7 +7,7 @@ import com.sunshine1027.abstractfactory.User;
  */
 
 public class WOWGame implements PCGame {
-
+    @Override
     public String storageProgress(final User user, final int times) {
         return createMsg(user, times);
     }

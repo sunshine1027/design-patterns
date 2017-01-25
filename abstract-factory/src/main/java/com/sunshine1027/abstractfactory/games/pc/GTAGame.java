@@ -9,7 +9,7 @@ import com.sunshine1027.abstractfactory.games.pc.PCGame;
 
 public class GTAGame implements PCGame {
 
-
+    @Override
     public String storageProgress(User user, int times) {
         return createMsg(user, times);
     }

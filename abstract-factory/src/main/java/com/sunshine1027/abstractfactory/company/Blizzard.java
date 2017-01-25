@@ -10,12 +10,12 @@ import com.sunshine1027.abstractfactory.games.pc.WOWGame;
  */
 
 public class Blizzard implements Company{
-
+    @Override
     public PCGame createPCGame() {
         return new WOWGame();
     }
 
-
+    @Override
     public OnlineGame createOnlineGame() {
         return new DiabloGame();
     }

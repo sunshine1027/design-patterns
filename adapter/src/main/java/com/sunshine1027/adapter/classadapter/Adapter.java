@@ -5,10 +5,12 @@ package com.sunshine1027.adapter.classadapter;
  */
 
 public class Adapter extends Adaptee implements Target{
+    @Override
     public void method2() {
         System.out.println("adapter method2");
     }
 
+    @Override
     public void method3() {
         System.out.println("adapter method3");
     }

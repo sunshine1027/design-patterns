@@ -9,7 +9,7 @@ import com.sunshine1027.abstractfactory.games.online.OnlineGame;
  */
 
 public class MidnightClubGame implements OnlineGame {
-
+    @Override
     public String consume(User user, int price) {
         return createMidnightClubConsumeMsg(user, price);
     }
