@@ -30,6 +30,7 @@
         <module>chain-of-responsibility</module>
         <module>command</module>
         <module>iterator</module>
+        <module>interpreter</module>
     </modules>
 
     <dependencies>
