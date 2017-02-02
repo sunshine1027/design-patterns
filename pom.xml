@@ -33,6 +33,7 @@
         <module>interpreter</module>
         <module>mediator</module>
         <module>memento</module>
+        <module>observer</module>
     </modules>
 
     <dependencies>
